@@ -1,0 +1,330 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+
+
+
+
+
+/* Navigation Bar Styling */
+nav {
+  background-color: #333;
+  padding: 15px;
+  display: flex;
+  justify-content: center; /* Centers the links horizontally */
+  align-items: center;
+}
+
+/* Styling the Links */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px; /* Space between links */
+  font-size: 18px; /* Font size of the links */
+  padding: 10px 20px; /* Padding around the link for a larger clickable area */
+  border-radius: 5px; /* Rounded edges for links */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover Effects for Links */
+nav a:hover {
+  background-color: #ff6347; /* Change background color on hover */
+  color: white; /* Keep text color white */
+}
+
+/* Active Link Styling */
+nav a.active-link {
+  background-color: #ff6347; /* Highlight the active link */
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Page Styles */
+.page-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Heading style */
+.page-container h1 {
+  font-size: 32px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+.page-container p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Example specific styles for the Home page */
+.home-page {
+  background-color: #f0f8ff; /* Light background for home */
+}
+
+.veg-page {
+  background-color: #e6ffe6; /* Light green background for veg page */
+}
+
+.nonveg-page {
+  background-color: #ffebcc; /* Light orange background for nonveg page */
+}
+
+.cart-page {
+  background-color: #fff0f5; /* Light pink background for cart page */
+}
+
+.purchase-history-page {
+  background-color: #e6f7ff; /* Light blue background for purchase history */
+}
+
+.about-us-page {
+  background-color: #fff; /* Default background */
+}
+
+.contact-us-page {
+  background-color: #fff; /* Default background */
+}
+
+/* App.css */
+
+/* App.css */
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f0f4f8; /* Light background */
+  color: #333;
+}
+
+/* Navigation bar */
+nav {
+  background-color: #00796b; /* Teal */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #004d40; /* Darker teal */
+  border-radius: 5px;
+}
+
+/* Page Titles */
+h1 {
+  font-size: 2rem;
+  color: #d84315; /* Orange */
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+/* Product and Cart Items */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto;
+  width: 80%;
+  max-width: 600px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff; /* White background for items */
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #ff9800; /* Orange */
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.7rem;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e65100; /* Darker orange */
+}
+
+/* Cart Page */
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-summary {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.discount-section {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.discount-button,
+.coupon-select {
+  margin: 0.5rem;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.discount-button {
+  background-color: #00796b; /* Teal */
+  color: #fff;
+}
+
+.discount-button:hover {
+  background-color: #004d40; /* Darker teal */
+}
+
+.coupon-select {
+  padding: 0.4rem;
+  border: 1px solid #ccc; /* Light gray border */
+}
+
+.purchase-button {
+  background-color: #388e3c; /* Green */
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.purchase-button:hover {
+  background-color: #1b5e20; /* Darker green */
+}
+
+/* Purchase History */
+.purchase-history {
+  width: 80%;
+  max-width: 600px;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  border: 1px solid #ccc; /* Light gray border */
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.purchase-item {
+  margin: 0.5rem 0;
+  padding: 0.7rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.purchase-item:last-child {
+  border-bottom: none;
+}
+
+.purchase-date {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  nav {
+      flex-direction: column;
+  }
+
+  ul,
+  .purchase-history {
+      width: 95%;
+  }
+
+  h1 {
+      font-size: 1.8rem;
+  }
+}
